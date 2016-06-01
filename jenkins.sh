@@ -16,4 +16,8 @@ verify API_KEY
 verify PRIVATE_KEY
 verify DATABASE_PASSWORD
 
+if [[ $status -eq 0 ]]; then
+  echo "All secret values are present in the environment!"
+fi
+
 exit $status
